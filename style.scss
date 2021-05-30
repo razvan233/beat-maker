@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  .sound-1 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    p {
+      flex: 2;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+    }
+    .mute {
+      min-width: 80px;
+      height: 50px;
+      background-color: black;
+      margin-left: 20px;
+      border-radius: 10px;
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+      p {
+        color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .sound-clap {
+      margin: 0 30px;
+      flex: 2;
+      min-width: 100px;
+    }
+    .pad {
+      min-width: 50px;
+      height: 50px;
+      margin: 0 10px;
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+      &.clap {
+        background-color: rgba(0, 0, 255, 0.363);
+        &.active {
+          background-color: blue;
+        }
+      }
+    }
+  }
+  .sound-2 {
+    display: flex;
+    margin: 0px 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    p {
+      flex: 2;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+    }
+    .mute {
+      min-width: 80px;
+      height: 50px;
+      background-color: black;
+      user-select: none;
+      margin-left: 20px;
+      border-radius: 10px;
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+      p {
+        color: white;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .sound-crash {
+      margin: 0 30px;
+      flex: 2;
+      min-width: 100px;
+    }
+    .pad {
+      min-width: 50px;
+      height: 50px;
+      margin: 0 10px;
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+      &.crash {
+        background-color: rgba(255, 0, 0, 0.363);
+        &.active {
+          background-color: red;
+        }
+      }
+    }
+  }
+  .sound-3 {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    p {
+      flex: 2;
+      width: 50px;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+    }
+    .mute {
+      min-width: 80px;
+      height: 50px;
+      background-color: black;
+      margin-left: 20px;
+      border-radius: 10px;
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+      p {
+        color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .sound-hihat {
+      margin: 0 30px;
+      flex: 2;
+      min-width: 100px;
+    }
+    .pad {
+      min-width: 50px;
+      height: 50px;
+      margin: 0 10px;
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+      &.hihat {
+        background-color: rgba(255, 255, 0, 0.363);
+        &.active {
+          background-color: yellow;
+        }
+      }
+    }
+  }
+  .play {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .play-btn {
+      min-width: 20%;
+      height: 50px;
+      background-color: black;
+      border-radius: 20px;
+      transition: all 1s ease-in-out;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .bpm {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .slider {
+      margin: 20px 0 0 0;
+      appearance: none;
+      width: 25%;
+      height: 25px;
+      background: #d3d3d3;
+      outline: none;
+      border-radius: 20px;
+    }
+  }
+}
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Beat Maker</title>
+  </head>
+  <body>
+    <div class="sound-1">
+      <p>Clap</p>
+      <div class="mute"><p id="clap">MUTE</p></div>
+      <select class="sound-clap" id="" name="clap-select">
+        <option value="allSounds/clap-808.wav">Clap-808</option>
+        <option value="allSounds/clap-fat.wav">Clap-fat</option>
+        <option value="allSounds/clap-tape.wav">Clap-tape</option>
+      </select>
+      <div class="pad clap c0"></div>
+      <div class="pad clap c1"></div>
+      <div class="pad clap c2"></div>
+      <div class="pad clap c3"></div>
+      <div class="pad clap c4"></div>
+      <div class="pad clap c5"></div>
+      <div class="pad clap c6"></div>
+      <div class="pad clap c7"></div>
+    </div>
+    <div class="sound-2">
+      <p>Crash</p>
+      <div class="mute">
+        <p id="crash">MUTE</p>
+      </div>
+      <select class="sound-crash" id="" name="crash-select">
+        <option value="allSounds/crash-808.wav">Crash-808</option>
+        <option value="allSounds/crash-acoustic.wav">Crash-Acoustic</option>
+        <option value="allSounds/crash-tape.wav">Crash-Tape</option>
+      </select>
+      <div class="pad crash c0"></div>
+      <div class="pad crash c1"></div>
+      <div class="pad crash c2"></div>
+      <div class="pad crash c3"></div>
+      <div class="pad crash c4"></div>
+      <div class="pad crash c5"></div>
+      <div class="pad crash c6"></div>
+      <div class="pad crash c7"></div>
+    </div>
+    <div class="sound-3">
+      <p>Hihat</p>
+      <div class="mute"><p id="hihat">MUTE</p></div>
+      <select class="sound-hihat" id="" name="hihat-select">
+        <option value="allSounds/hihat-808.wav" name="Hihat-808">
+          Hihat-808
+        </option>
+        <option value="allSounds/hihat-analog.wav" name="Hihat-Analog">
+          Hihat-Analog
+        </option>
+        <option value="allSounds/hihat-plain.wav">Hihat-Plain</option>
+      </select>
+      <div class="pad hihat c0"></div>
+      <div class="pad hihat c1"></div>
+      <div class="pad hihat c2"></div>
+      <div class="pad hihat c3"></div>
+      <div class="pad hihat c4"></div>
+      <div class="pad hihat c5"></div>
+      <div class="pad hihat c6"></div>
+      <div class="pad hihat c7"></div>
+    </div>
+    <div class="play"><button type="submit" class="play-btn">PLAY</button></div>
+    <div class="bpm">
+      <p>SELEECT BPM: <span class="demo"></span></p>
+      <input
+        type="range"
+        min="1"
+        max="1000"
+        value="150"
+        class="slider"
+        id="myRange"
+      />
+    </div>
+    <audio class="clap-sound">
+      <source src="allSounds/clap-808.wav" type="audio/mpeg" />
+    </audio>
+    <audio class="crash-sound">
+      <source src="allSounds/crash-808.wav" type="audio/mpeg" />
+    </audio>
+    <audio class="hihat-sound">
+      <source src="allSounds/hihat-808.wav" type="audio/mpeg" />
+    </audio>
+    <script src="app.js"></script>
+  </body>
+</html>
